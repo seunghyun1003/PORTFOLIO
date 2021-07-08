@@ -269,10 +269,6 @@ i {
   font-style: italic;
 }
 
-p {
-  margin: 0 0 2em 0;
-}
-
 h1,
 h2,
 h3,
@@ -410,16 +406,6 @@ pre code {
   line-height: 1.75em;
   padding: 1em 1.5em;
   overflow-x: auto;
-}
-
-hr {
-  border: 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.15);
-  margin: 2em 0;
-}
-
-hr.major {
-  margin: 3em 0;
 }
 
 .align-left {
@@ -3266,6 +3252,57 @@ table.project-table td {
   text-align: center;
   object-fit: cover;
 }
+#blog-info {
+}
+.blog-inner-mobile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.blog-inner {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .blog-inner-mobile {
+    display: none;
+  }
+  .blog-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0;
+  }
+  .blog-item {
+    text-align: center;
+    flex-grow: 50%;
+    padding: 2em 0;
+    background-color: white;
+    margin: 0 1.5em;
+    border-radius: 3em;
+  }
+  #blog-info {
+    padding-top: 1em;
+  }
+  .blog-item h3,
+  .blog-item div {
+    color: black;
+  }
+  .bloglogo-box {
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+    border-radius: 30%;
+    overflow: hidden;
+  }
+  .bloglogo-img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 1680px) {
   .profile {
     padding: 3em 3em 2em 3em;
@@ -3513,23 +3550,18 @@ table.alt tfoot {
 
 .wrapper.style2 {
   background-color: #274c5e;
-  height: 100vh;
-  width: 100%;
 }
 
 .wrapper.style2-alt {
   background-color: #274c5e;
-  height: 100vh;
 }
 
 .wrapper.style3 {
   background-color: #c03546;
-  height: 100vh;
 }
 
 .wrapper.style3-alt {
   background-color: #274c5e;
-  height: 100vh;
 }
 
 .wrapper.style4 {
@@ -3538,9 +3570,9 @@ table.alt tfoot {
 
 .wrapper.style4-alt {
   background-color: #274c5e;
-  height: 100vh;
 }
-.wrapper.fullscreen {
+
+.wrapper. .wrapper.fullscreen {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
