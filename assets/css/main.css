@@ -3117,11 +3117,6 @@ body.is-ie .spotlights > section {
   }
 }
 
-#intro .inner,
-#one .profile,
-#three .inner {
-  height: 100vh;
-}
 .project-content {
   margin-top: 3em;
 }
@@ -4176,7 +4171,7 @@ body.is-preload #sidebar nav ul li {
 }
 #intro p {
   font-size: 1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 @media screen and (max-width: 980px) {
