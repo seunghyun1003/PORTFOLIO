@@ -3086,18 +3086,26 @@ body.is-ie .spotlights > section {
 .profile .inner-box1 #profile-img {
   margin: auto 0px;
   text-align: center;
-  width: 26%;
+  width: 20%;
 }
 .profile .inner-box1 #profile-item {
-  width: 62%;
+  width: 68%;
   margin-left: 6%;
 }
 .profile-table {
   margin: 0 0 2em 2em;
   font-size: 0.85em;
+  text-align: center;
 }
 .profile-table tr {
   color: white;
+  vertical-align: center;
+}
+.profile-table th {
+  border-right: solid 1px rgba(253, 245, 230, 0.076);
+}
+.profile-table td {
+  padding: 0.4em 0;
 }
 
 #three .inner {
@@ -3229,11 +3237,12 @@ table.project-table td {
   }
   table.project-table th {
     padding: 0.5em;
-    width: 30%;
+    width: 40%;
   }
   table.project-table td {
     padding: 0.3em;
-    width: 70%;
+    width: 60%;
+    word-break: break-all;
   }
   .project-table p {
     font-weight: 600;
@@ -3476,7 +3485,6 @@ table tbody tr:nth-child(2n + 1) {
 table th {
   font-size: 1em;
   font-weight: bold;
-  text-align: left;
 }
 
 table thead {
