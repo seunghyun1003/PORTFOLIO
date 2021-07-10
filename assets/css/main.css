@@ -3107,6 +3107,9 @@ body.is-ie .spotlights > section {
 .profile-table td {
   padding: 0.4em 0;
 }
+.tooltip-inner {
+  max-width: 150px;
+}
 @media screen and (max-width: 1280px) {
   .profile .inner-box1 #profile-img {
     display: none;
@@ -3136,25 +3139,32 @@ body.is-ie .spotlights > section {
   width: 100%;
 }
 
-.tab-content > .active {
-  font-size: 0.8em;
+.project-item {
+  color: black;
+  width: 100%;
+  background-color: white;
+  border-radius: 2em;
+  padding: 1em 1em 0.5em 1em;
+  margin: 1em 0 3em;
+}
+.project-info {
+  font-size: 0.85em;
   display: flex;
   flex-direction: row;
-  background-color: white;
-  padding: 1em;
-  margin: 0.4em 1em 1em 1em;
-  color: black;
-  border-radius: 2em;
-  width: 100%;
 }
-.project-item {
-  flex-basis: 45%;
-  margin-right: 1%;
+.project-out {
+  flex-basis: 48%;
+  min-width: 48%;
 }
 .project-title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bolder;
-  margin-bottom: 0.2em;
+}
+.project-addex {
+  font-size: 0.8em;
+  color: rgb(175, 175, 175);
+  margin-bottom: 0.75em;
+  padding-bottom: 0.25em;
 }
 .carousel {
   height: 300px;
@@ -3186,9 +3196,9 @@ body.is-ie .spotlights > section {
   color: black;
   font-weight: bolder;
 }
-.project-info {
-  flex-basis: 52%;
-  margin-left: 1%;
+.project-in {
+  flex-basis: 50%;
+  margin-left: 2%;
 }
 #project-why {
   border-bottom: 1px solid lightgray;
@@ -3223,10 +3233,10 @@ table.project-table td {
 }
 
 @media screen and (max-width: 768px) {
-  .tab-content > .active {
+  .project-item {
     flex-direction: column;
   }
-  .project-info {
+  .project-in {
     margin-top: 1em;
   }
   table.project-table {
@@ -4172,6 +4182,9 @@ body.is-preload #sidebar nav ul li {
 #intro p {
   font-size: 1.25em;
   margin-bottom: 3em;
+}
+#intro > .inner {
+  padding: calc(4rem + 4.5rem) 2rem 4rem;
 }
 
 @media screen and (max-width: 980px) {
