@@ -3233,7 +3233,7 @@ table.project-table td {
 }
 
 @media screen and (max-width: 768px) {
-  .project-item {
+  .project-info {
     flex-direction: column;
   }
   .project-in {
