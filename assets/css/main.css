@@ -3094,6 +3094,7 @@ body.is-ie .spotlights > section {
   margin: auto 0px;
   text-align: center;
   width: 20%;
+  height: auto;
 }
 .profile .inner-box1 #profile-item {
   width: 68%;
