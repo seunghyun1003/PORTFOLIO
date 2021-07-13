@@ -3576,7 +3576,7 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-  background-color: #97b3c2;
+  background-color: #274c5e;
 }
 
 .wrapper.style1-alt {
@@ -3584,7 +3584,7 @@ table.alt tfoot {
 }
 
 .wrapper.style2 {
-  background-color: #274c5e;
+  background-color: #97b3c2;
 }
 
 .wrapper.style2-alt {
@@ -4184,6 +4184,9 @@ body.is-preload #sidebar nav ul li {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+#intro h1 {
+  margin-top: 1.5em;
 }
 #intro p {
   font-size: 1.25em;
