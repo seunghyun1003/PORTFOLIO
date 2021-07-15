@@ -3068,12 +3068,6 @@ body.is-ie .spotlights > section {
   width: 100%;
 }
 
-.profile {
-  padding: 3em 3em 3em 3em;
-  max-width: 100%;
-  width: 75em;
-}
-
 .profile .inner-box1 {
   display: -moz-flex;
   display: -webkit-flex;
@@ -3548,26 +3542,30 @@ table.alt tfoot {
   position: relative;
 }
 
-.wrapper > .inner {
+.wrapper > .inner,
+.profile {
   padding: 3em 3em 3em 3em;
   max-width: 100%;
   width: 75em;
 }
 
 @media screen and (max-width: 1680px) {
-  .wrapper > .inner {
+  .wrapper > .inner,
+  .profile {
     padding: 4em 4em 2em 4em;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .wrapper > .inner {
+  .wrapper > .inner,
+  .profile {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper > .inner {
+  .wrapper > .inner,
+  .profile {
     padding: 3em 2em 1em 2em;
   }
 }
